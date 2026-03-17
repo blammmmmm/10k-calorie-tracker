@@ -25,20 +25,15 @@
       background: transparent; color: var(--text); font-family: Inter, system-ui, sans-serif;
     }
     body { display: flex; align-items: flex-end; justify-content: flex-start; padding: 24px; }
-    .card {
-      width: min(760px, 95vw);
-      border-radius: 28px;
-      border: 1px solid var(--panel-border);
-      background:
-        radial-gradient(circle at top left, (255,255,255,0.07), transparent 28%),
-        linear-gradient(180deg, (255,255,255,0.05), (255,255,255,0.015)),
-        var(--panel-bg);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: 0 24px 70px (0,0,0,0.34), inset 0 1px 0 (255,255,255,0.05);
-      overflow: hidden;
-      position: relative;
-    }
+   .card {
+  width: min(760px, 95vw);
+  border-radius: 28px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.34);
+  overflow: hidden;
+  position: relative;
+}
     .content { padding: 20px 20px 16px; display: grid; gap: 14px; }
     .top { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
     .title { font-size: 34px; line-height: 0.95; letter-spacing: -0.06em; font-weight: 900; }
